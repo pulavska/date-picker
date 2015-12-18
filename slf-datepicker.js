@@ -198,7 +198,7 @@ DatePicker.prototype = {
 };
 
 
-define(['jquery', 'bootstrap', 'bootstrap-datepicker'],
+define(['jquery', 'bootstrap-datepicker'],
     function ($) {
         return DatePicker;
     }
