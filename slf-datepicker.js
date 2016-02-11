@@ -37,7 +37,7 @@ DatePicker.prototype = {
         minViewMode: 1,
         //language: string
         //   Default language
-        language: "ru",
+        language: "uk",
         //multidate: boolean
         //   Enable multidate picking
         multidate: false,
@@ -200,6 +200,17 @@ DatePicker.prototype = {
 
 define(['jquery', 'bootstrap-datepicker'],
     function ($) {
+          $.fn.datepicker.dates.uk = {
+            days: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четвер", "П'ятниця", "Субота"],
+            daysShort: ["Нед", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб"],
+            daysMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+            months: ["Cічень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
+            monthsShort: ["Січ", "Лют", "Бер", "Кві", "Тра", "Чер", "Лип", "Сер", "Вер", "Жов", "Лис", "Гру"],
+            today: "Сьогодні",
+            clear: "Очистити",
+            format: "dd.mm.yyyy",
+            weekStart: 1
+        };
         return DatePicker;
     }
 );
